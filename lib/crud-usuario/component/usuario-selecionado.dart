@@ -66,7 +66,7 @@ Widget _buildAppBar(context) {
     backgroundColor: Colors.white,
     title: Container(
       child: Image.asset(
-        'assets/logo2.png',
+        'assets/images/logo2.png',
         fit: BoxFit.fitHeight,
         scale: 1,
       ),
@@ -115,7 +115,7 @@ Widget _buildAppBar(context) {
             Container(
               padding: const EdgeInsets.all(8),
               child: Image.asset(
-                'assets/avatar.png',
+                'assets/images/avatar.png',
                 width: 50,
                 scale: 5,
               ),
@@ -133,7 +133,7 @@ Widget _buildBody(context) {
     height: MediaQuery.of(context).size.height,
     decoration: BoxDecoration(
         image: DecorationImage(
-            image: AssetImage('assets/imagemBackground.png'),
+            image: AssetImage('assets/images/background.png'),
             fit: BoxFit.fill)),
     child: Container(
       alignment: Alignment.center,

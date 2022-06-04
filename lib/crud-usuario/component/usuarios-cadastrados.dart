@@ -48,7 +48,7 @@ class _UsuariosCadastradosState extends State<UsuariosCadastrados> {
       backgroundColor: Colors.white,
       title: Container(
         child: Image.asset(
-          'assets/logo2.png',
+          'assets/images/logo2.png',
           fit: BoxFit.fitHeight,
           scale: 1,
         ),
@@ -97,7 +97,7 @@ class _UsuariosCadastradosState extends State<UsuariosCadastrados> {
               Container(
                 padding: const EdgeInsets.all(8),
                 child: Image.asset(
-                  'assets/avatar.png',
+                  'assets/images/avatar.png',
                   width: 50,
                   scale: 5,
                 ),
@@ -118,7 +118,7 @@ Widget _buildBody(context) {
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/imagemBackground.png'),
+                image: AssetImage('assets/images/background.png'),
                 fit: BoxFit.fill)),
         child: Container(
           alignment: Alignment.center,
@@ -180,7 +180,7 @@ Widget _retornarListaUsuariosCadastrados(BuildContext context) {
                               height: MediaQuery.of(context).size.height / 8,
                               width: MediaQuery.of(context).size.width / 10,
                               child: Image.asset(
-                                'assets/avatar.png',
+                                'assets/images/avatar.png',
                                 height: 50,
                                 width: 50,
                               ),

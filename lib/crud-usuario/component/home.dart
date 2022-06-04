@@ -38,7 +38,7 @@ class _HomeState extends State<Home> {
       backgroundColor: Colors.white,
       title: Container(
         child: Image.asset(
-          'assets/logo2.png',
+          'assets/images/logo2.png',
           fit: BoxFit.fitHeight,
           scale: 1,
         ),
@@ -64,7 +64,8 @@ class _HomeState extends State<Home> {
                 },
                 child: const Text(
                   'CADASTRAR',
-                  style: const TextStyle(color: Color(0xFF4B4A4A), fontSize: 16),
+                  style:
+                      const TextStyle(color: Color(0xFF4B4A4A), fontSize: 16),
                 ),
               ),
               TextButton(
@@ -74,7 +75,8 @@ class _HomeState extends State<Home> {
                 },
                 child: const Text(
                   'USUÁRIOS',
-                  style: TextStyle(color: const Color(0xFF4B4A4A), fontSize: 16),
+                  style:
+                      TextStyle(color: const Color(0xFF4B4A4A), fontSize: 16),
                 ),
               ),
               TextButton(
@@ -87,7 +89,7 @@ class _HomeState extends State<Home> {
               Container(
                 padding: const EdgeInsets.all(8),
                 child: Image.asset(
-                  'assets/avatar.png',
+                  'assets/images/avatar.png',
                   width: 50,
                   scale: 5,
                 ),
@@ -101,9 +103,11 @@ class _HomeState extends State<Home> {
 
   Widget _buildBody(context) {
     return Container(
-      decoration: const BoxDecoration(
-          image: const DecorationImage(
-              image: AssetImage('assets/imagemBackground.png'),
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height,
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage('assets/images/background.png'),
               fit: BoxFit.fill)),
       child: Container(
         width: MediaQuery.of(context).size.width,
@@ -132,7 +136,7 @@ class _HomeState extends State<Home> {
                         arguments: _bloc);
                   },
                   child: Image.asset(
-                    'assets/botaoAdicionar.png',
+                    'assets/images/botaoAdicionar.png',
                     height: 100,
                   )),
             )
